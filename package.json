@@ -1,0 +1,42 @@
+{
+  "name": "nodejs-ejemplo-dto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node dist/app.js",
+    "dev": "tsnd --respawn app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gerardoromero91/nodejs-ejemplo-dto.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gerardoromero91/nodejs-ejemplo-dto/issues"
+  },
+  "homepage": "https://github.com/gerardoromero91/nodejs-ejemplo-dto#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.13.0",
+    "helmet": "^4.6.0",
+    "moment": "^2.29.1",
+    "mysql2": "^2.3.0",
+    "sequelize": "^6.7.0",
+    "typescript": "^4.4.4"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.10.9",
+    "@types/validator": "^13.6.3",
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.13",
+    "sequelize-cli": "^6.2.0",
+    "ts-node-dev": "^1.1.8"
+  }
+}
