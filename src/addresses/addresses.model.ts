@@ -27,6 +27,14 @@ export interface AddressDTO {
   CP: string
 }
 
+export interface Address2DTO {
+  id: number
+  street: string
+  city: string
+  state: string
+  CP: string
+}
+
 const attributes = {
   id: {
     type: DataTypes.INTEGER.UNSIGNED,

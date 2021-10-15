@@ -5,6 +5,7 @@ const router = Router()
 
 router.get('/',  userController.index)
 router.get('/:id',  userController.show)
+router.get('/newDto/:id',  userController.showNewDto)
 
 // router.post('/', userController.store)
 // router.put('/:id',  userController.update)

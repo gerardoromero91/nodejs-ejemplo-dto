@@ -1,7 +1,7 @@
 import { Model, DataTypes } from 'sequelize'
 import db from '../../db/connection'
 import Address from '../addresses/addresses.model';
-import { AddressDTO } from '../addresses/addresses.model';
+import { AddressDTO, Address2DTO } from '../addresses/addresses.model';
 
 export class User extends Model {
   public id!: number
@@ -31,6 +31,16 @@ export interface UserDTO {
   age: number
   verified: string
   address: AddressDTO | null
+}
+
+export interface User2DTO {
+  id: number
+  fullName: string
+  email: string
+  birthdate: string
+  age: number
+  verified: string
+  address: Address2DTO | null
 }
 
 const attributes = {
