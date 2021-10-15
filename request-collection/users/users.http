@@ -1,0 +1,7 @@
+@urlLocal = http://localhost:8000/api
+
+### Obtener listado de Users
+GET {{urlLocal}}/users
+
+### Obtener un User
+GET {{urlLocal}}/users/1
