@@ -30,8 +30,7 @@ export interface UserDTO {
   birthdate: string
   age: number
   verified: string
-  address: AddressDTO
-  // nuevos datos
+  address: AddressDTO | null
 }
 
 const attributes = {

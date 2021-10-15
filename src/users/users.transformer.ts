@@ -10,7 +10,7 @@ export const createUserDto = (user: User): UserDTO => {
     email: user.email,
     birthdate: user.birthdate,
     age: moment().diff(user.birthdate, 'years'),
-    verified: (user.verified) ? 'Verificado' : 'No Verificado',
-    address: createAddressDto(user.Address)
+    verified: user.verified ? 'Verificado' : 'No Verificado',
+    address: user.Address ? createAddressDto(user.Address) : null
   }
 }
