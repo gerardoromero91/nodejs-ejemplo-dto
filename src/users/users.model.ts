@@ -1,11 +1,14 @@
 import { Model, DataTypes } from 'sequelize'
 import db from '../../db/connection'
+import Address from '../addresses/addresses.model';
+import { AddressDTO } from '../addresses/addresses.model';
 
 export class User extends Model {
   public id!: number
   public first_name!: string
   public last_name!: string
   public email!: string
+  public Address!: Address
   public birthdate!: string
   public verified!: boolean
   public readonly createdAt!: Date
@@ -27,6 +30,7 @@ export interface UserDTO {
   birthdate: string
   age: number
   verified: string
+  address: AddressDTO
   // nuevos datos
 }
 
