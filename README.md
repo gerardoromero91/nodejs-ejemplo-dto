@@ -1,4 +1,5 @@
 # nodejs-ejemplo-dto
+Modificar los datos de acceso a mysql en los archivos db/config.json y db/connection.ts en caso de que no uses los valores por default.
 
 1 - Instalar todas las dependencias necesarias con "npm install".
 
