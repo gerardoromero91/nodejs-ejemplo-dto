@@ -5,8 +5,7 @@ import db from './db/connection';
 import userRoutes from './src/users/users.routes'
 
 // dotenv.config();
-// require('./src/associations')
-// 
+require('./src/associations')
 
 class Server {
   private app: Application;
