@@ -7,7 +7,7 @@ const db = new Sequelize(
   {
     host: 'localhost',
     dialect: 'mysql',
-    logging: false,   //--cada comando que impaca en la base de datos lo ves por consola
+    logging: true,   //--cada comando que impaca en la base de datos lo ves por consola
     dialectOptions: {
         dateStrings: true,
         typeCast: true
